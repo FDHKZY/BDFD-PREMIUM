@@ -1,0 +1,68 @@
+{prefix} pre-ver
+
+```js
+
+$nomention
+
+$suppressErrors[Birisini Etiketlemelisin!]
+
+$setVar[pre;var;$mentioned[1]]
+
+$onlyForIDs[KENDİ İDNİZ;Bu Komut YapımcımaÖzel!]
+
+$title[Başarılı!]
+
+$description[
+
+<@$mentioned[1]> Artık **Premium Üye!**]
+
+$color[5865F2]
+
+$addTimestamp
+
+```
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+{prefix} pre-al
+
+```js
+
+$nomention
+
+$suppressErrors[Birisini Etiketlemelisin!]
+
+$setVar[pre;yok;$mentioned[1]]
+
+$onlyForIDs[KENDİ İDNİZBu Komut Sahibime Özel!]
+
+$title[Başarılı!]
+
+$description[
+
+<@$mentioned[1]> Artık **Premium Üye** Değil!]
+
+$color[5865F2]
+
+$addTimestamp
+
+```
+
+--------------------------------------------------------------------------------------------------------------
+
+premium komutlara bu komutu EKLEYİN :
+
+```js
+
+$onlyIf[$getVar[pre;$authorID]!=yok; Bu Komutu Kullanmak İçin **Premium** Olman Gerek!]
+
+```
+
+--------------------------------------------------------------------------------------------------------------
+
+VARİABLE
+
+``pre=yok``
